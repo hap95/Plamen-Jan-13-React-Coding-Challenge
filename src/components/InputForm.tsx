@@ -12,6 +12,7 @@ const InputForm: FC<{dispatch: any}> = ({dispatch}) => {
   const [accounts, setAccounts] = useState<string>(accountsData);
   const [journal, setJournal] = useState<string>(journalData);
   const [userInput, setUserInput] = useState<string>('1000 5000 MAR-16 JUL-16 HTML');
+  // const [userInput, setUserInput] = useState<string>('2000 * * MAY-16 CSV');
 
   const handleSubmit = (e?: FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
